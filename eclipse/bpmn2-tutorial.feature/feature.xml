@@ -461,11 +461,4 @@ Public License instead of this License.
       <import plugin="org.eclipse.bpmn2.modeler.ui" version="1.2.0" match="greaterOrEqual"/>
    </requires>
 
-   <plugin
-         id="org.imixs.eclipse.bpmn2"
-         download-size="0"
-         install-size="0"
-         version="1.2.0.qualifier"
-         unpack="false"/>
-
 </feature>

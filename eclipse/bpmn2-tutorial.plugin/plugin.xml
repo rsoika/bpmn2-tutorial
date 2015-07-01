@@ -26,7 +26,7 @@
             description="A Workflow Task describes the process performed by a human user. The task is managed by the Imixs-Workflow Engine and provides properties which are describing the status of this task inside the Workflow Engine."
             featureContainer="bpmn2.tutorial.ImixsFeatureContainerTask"
             icon="process-bubble.png"
-            id="org.imixs.workflow.bpmn.ProcessEntityTask"
+            id="bpmn2.tutorial.ProcessEntityTask"
             name="Example-Task"
             propertyTabs="bpmn2.tutorial.propertytab.task.workflow"
             runtimeId="bpmn2.tutorial.runtime"
