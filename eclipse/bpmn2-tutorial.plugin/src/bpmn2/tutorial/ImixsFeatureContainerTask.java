@@ -30,7 +30,7 @@ import bpmn2.tutorial.ImixsTaskFeatureContainer.ImixsAddTaskFeature;
 public class ImixsFeatureContainerTask extends CustomShapeFeatureContainer {
  
 	// these values must match what's in the plugin.xml
-	public final static String PROCESSENTITY_TASK_ID = "org.imixs.workflow.bpmn.ProcessEntityTask";
+	public final static String PROCESSENTITY_TASK_ID = "bpmn2.tutorial.ProcessEntityTask";
 	private static final IColorConstant PROCESSENTITY_BACKGROUND = new ColorConstant(
 			144, 76, 24);
   
