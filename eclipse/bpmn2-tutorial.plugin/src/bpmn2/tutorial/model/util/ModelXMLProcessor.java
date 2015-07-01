@@ -1,6 +1,8 @@
 /**
  */
-package org.imixs.bpmn.model.util;
+package bpmn2.tutorial.model.util;
+
+import bpmn2.tutorial.model.ModelPackage;
 
 import java.util.Map;
 
@@ -9,8 +11,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.Resource;
 
 import org.eclipse.emf.ecore.xmi.util.XMLProcessor;
-
-import org.imixs.bpmn.model.ModelPackage;
 
 /**
  * This class contains helper methods to serialize and deserialize XML documents

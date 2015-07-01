@@ -1,6 +1,6 @@
 /**
  */
-package org.imixs.bpmn.model;
+package bpmn2.tutorial.model;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see org.imixs.bpmn.model.ModelFactory
+ * @see bpmn2.tutorial.model.ModelFactory
  * @model kind="package"
  * @generated
  */
@@ -38,7 +38,7 @@ public interface ModelPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.imixs.org/bpmn2";
+	String eNS_URI = "http://bpmn2.tutorial.org/bpmn2";
 
 	/**
 	 * The package namespace name.
@@ -54,14 +54,14 @@ public interface ModelPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	ModelPackage eINSTANCE = org.imixs.bpmn.model.impl.ModelPackageImpl.init();
+	ModelPackage eINSTANCE = bpmn2.tutorial.model.impl.ModelPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link org.imixs.bpmn.model.impl.DocumentRootImpl <em>Document Root</em>}' class.
+	 * The meta object id for the '{@link bpmn2.tutorial.model.impl.DocumentRootImpl <em>Document Root</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.imixs.bpmn.model.impl.DocumentRootImpl
-	 * @see org.imixs.bpmn.model.impl.ModelPackageImpl#getDocumentRoot()
+	 * @see bpmn2.tutorial.model.impl.DocumentRootImpl
+	 * @see bpmn2.tutorial.model.impl.ModelPackageImpl#getDocumentRoot()
 	 * @generated
 	 */
 	int DOCUMENT_ROOT = 0;
@@ -103,11 +103,11 @@ public interface ModelPackage extends EPackage {
 	int DOCUMENT_ROOT_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.imixs.bpmn.model.impl.ItemImpl <em>Item</em>}' class.
+	 * The meta object id for the '{@link bpmn2.tutorial.model.impl.ItemImpl <em>Item</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.imixs.bpmn.model.impl.ItemImpl
-	 * @see org.imixs.bpmn.model.impl.ModelPackageImpl#getItem()
+	 * @see bpmn2.tutorial.model.impl.ItemImpl
+	 * @see bpmn2.tutorial.model.impl.ModelPackageImpl#getItem()
 	 * @generated
 	 */
 	int ITEM = 1;
@@ -158,11 +158,11 @@ public interface ModelPackage extends EPackage {
 	int ITEM_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.imixs.bpmn.model.impl.ValueImpl <em>Value</em>}' class.
+	 * The meta object id for the '{@link bpmn2.tutorial.model.impl.ValueImpl <em>Value</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.imixs.bpmn.model.impl.ValueImpl
-	 * @see org.imixs.bpmn.model.impl.ModelPackageImpl#getValue()
+	 * @see bpmn2.tutorial.model.impl.ValueImpl
+	 * @see bpmn2.tutorial.model.impl.ModelPackageImpl#getValue()
 	 * @generated
 	 */
 	int VALUE = 2;
@@ -203,108 +203,109 @@ public interface ModelPackage extends EPackage {
 	 */
 	int VALUE_OPERATION_COUNT = 0;
 
+
 	/**
-	 * Returns the meta object for class '{@link org.imixs.bpmn.model.DocumentRoot <em>Document Root</em>}'.
+	 * Returns the meta object for class '{@link bpmn2.tutorial.model.DocumentRoot <em>Document Root</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Document Root</em>'.
-	 * @see org.imixs.bpmn.model.DocumentRoot
+	 * @see bpmn2.tutorial.model.DocumentRoot
 	 * @generated
 	 */
 	EClass getDocumentRoot();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.imixs.bpmn.model.DocumentRoot#getItem <em>Item</em>}'.
+	 * Returns the meta object for the containment reference '{@link bpmn2.tutorial.model.DocumentRoot#getItem <em>Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Item</em>'.
-	 * @see org.imixs.bpmn.model.DocumentRoot#getItem()
+	 * @see bpmn2.tutorial.model.DocumentRoot#getItem()
 	 * @see #getDocumentRoot()
 	 * @generated
 	 */
 	EReference getDocumentRoot_Item();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.imixs.bpmn.model.DocumentRoot#getValue <em>Value</em>}'.
+	 * Returns the meta object for the containment reference '{@link bpmn2.tutorial.model.DocumentRoot#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Value</em>'.
-	 * @see org.imixs.bpmn.model.DocumentRoot#getValue()
+	 * @see bpmn2.tutorial.model.DocumentRoot#getValue()
 	 * @see #getDocumentRoot()
 	 * @generated
 	 */
 	EReference getDocumentRoot_Value();
 
 	/**
-	 * Returns the meta object for class '{@link org.imixs.bpmn.model.Item <em>Item</em>}'.
+	 * Returns the meta object for class '{@link bpmn2.tutorial.model.Item <em>Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Item</em>'.
-	 * @see org.imixs.bpmn.model.Item
+	 * @see bpmn2.tutorial.model.Item
 	 * @generated
 	 */
 	EClass getItem();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link org.imixs.bpmn.model.Item#getValuelist <em>Valuelist</em>}'.
+	 * Returns the meta object for the containment reference list '{@link bpmn2.tutorial.model.Item#getValuelist <em>Valuelist</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Valuelist</em>'.
-	 * @see org.imixs.bpmn.model.Item#getValuelist()
+	 * @see bpmn2.tutorial.model.Item#getValuelist()
 	 * @see #getItem()
 	 * @generated
 	 */
 	EReference getItem_Valuelist();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.imixs.bpmn.model.Item#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link bpmn2.tutorial.model.Item#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see org.imixs.bpmn.model.Item#getName()
+	 * @see bpmn2.tutorial.model.Item#getName()
 	 * @see #getItem()
 	 * @generated
 	 */
 	EAttribute getItem_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.imixs.bpmn.model.Item#getType <em>Type</em>}'.
+	 * Returns the meta object for the attribute '{@link bpmn2.tutorial.model.Item#getType <em>Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Type</em>'.
-	 * @see org.imixs.bpmn.model.Item#getType()
+	 * @see bpmn2.tutorial.model.Item#getType()
 	 * @see #getItem()
 	 * @generated
 	 */
 	EAttribute getItem_Type();
 
 	/**
-	 * Returns the meta object for class '{@link org.imixs.bpmn.model.Value <em>Value</em>}'.
+	 * Returns the meta object for class '{@link bpmn2.tutorial.model.Value <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Value</em>'.
-	 * @see org.imixs.bpmn.model.Value
+	 * @see bpmn2.tutorial.model.Value
 	 * @generated
 	 */
 	EClass getValue();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link org.imixs.bpmn.model.Value#getMixed <em>Mixed</em>}'.
+	 * Returns the meta object for the attribute list '{@link bpmn2.tutorial.model.Value#getMixed <em>Mixed</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>Mixed</em>'.
-	 * @see org.imixs.bpmn.model.Value#getMixed()
+	 * @see bpmn2.tutorial.model.Value#getMixed()
 	 * @see #getValue()
 	 * @generated
 	 */
 	EAttribute getValue_Mixed();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.imixs.bpmn.model.Value#getValue <em>Value</em>}'.
+	 * Returns the meta object for the attribute '{@link bpmn2.tutorial.model.Value#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Value</em>'.
-	 * @see org.imixs.bpmn.model.Value#getValue()
+	 * @see bpmn2.tutorial.model.Value#getValue()
 	 * @see #getValue()
 	 * @generated
 	 */
@@ -334,11 +335,11 @@ public interface ModelPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link org.imixs.bpmn.model.impl.DocumentRootImpl <em>Document Root</em>}' class.
+		 * The meta object literal for the '{@link bpmn2.tutorial.model.impl.DocumentRootImpl <em>Document Root</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.imixs.bpmn.model.impl.DocumentRootImpl
-		 * @see org.imixs.bpmn.model.impl.ModelPackageImpl#getDocumentRoot()
+		 * @see bpmn2.tutorial.model.impl.DocumentRootImpl
+		 * @see bpmn2.tutorial.model.impl.ModelPackageImpl#getDocumentRoot()
 		 * @generated
 		 */
 		EClass DOCUMENT_ROOT = eINSTANCE.getDocumentRoot();
@@ -360,11 +361,11 @@ public interface ModelPackage extends EPackage {
 		EReference DOCUMENT_ROOT__VALUE = eINSTANCE.getDocumentRoot_Value();
 
 		/**
-		 * The meta object literal for the '{@link org.imixs.bpmn.model.impl.ItemImpl <em>Item</em>}' class.
+		 * The meta object literal for the '{@link bpmn2.tutorial.model.impl.ItemImpl <em>Item</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.imixs.bpmn.model.impl.ItemImpl
-		 * @see org.imixs.bpmn.model.impl.ModelPackageImpl#getItem()
+		 * @see bpmn2.tutorial.model.impl.ItemImpl
+		 * @see bpmn2.tutorial.model.impl.ModelPackageImpl#getItem()
 		 * @generated
 		 */
 		EClass ITEM = eINSTANCE.getItem();
@@ -394,11 +395,11 @@ public interface ModelPackage extends EPackage {
 		EAttribute ITEM__TYPE = eINSTANCE.getItem_Type();
 
 		/**
-		 * The meta object literal for the '{@link org.imixs.bpmn.model.impl.ValueImpl <em>Value</em>}' class.
+		 * The meta object literal for the '{@link bpmn2.tutorial.model.impl.ValueImpl <em>Value</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.imixs.bpmn.model.impl.ValueImpl
-		 * @see org.imixs.bpmn.model.impl.ModelPackageImpl#getValue()
+		 * @see bpmn2.tutorial.model.impl.ValueImpl
+		 * @see bpmn2.tutorial.model.impl.ModelPackageImpl#getValue()
 		 * @generated
 		 */
 		EClass VALUE = eINSTANCE.getValue();

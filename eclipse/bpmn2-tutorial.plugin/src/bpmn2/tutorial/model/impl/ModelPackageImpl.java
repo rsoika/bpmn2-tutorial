@@ -1,17 +1,19 @@
 /**
  */
-package org.imixs.bpmn.model.impl;
+package bpmn2.tutorial.model.impl;
+
+import bpmn2.tutorial.model.DocumentRoot;
+import bpmn2.tutorial.model.Item;
+import bpmn2.tutorial.model.ModelFactory;
+import bpmn2.tutorial.model.ModelPackage;
+import bpmn2.tutorial.model.Value;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-import org.imixs.bpmn.model.DocumentRoot;
-import org.imixs.bpmn.model.Item;
-import org.imixs.bpmn.model.ModelFactory;
-import org.imixs.bpmn.model.ModelPackage;
-import org.imixs.bpmn.model.Value;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,7 +54,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see org.imixs.bpmn.model.ModelPackage#eNS_URI
+	 * @see bpmn2.tutorial.model.ModelPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */

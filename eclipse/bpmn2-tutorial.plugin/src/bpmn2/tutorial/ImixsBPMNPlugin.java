@@ -31,11 +31,13 @@ import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
-import org.imixs.bpmn.model.Item;
-import org.imixs.bpmn.model.ModelFactory;
-import org.imixs.bpmn.model.ModelPackage;
-import org.imixs.bpmn.model.Value;
+
 import org.osgi.framework.BundleContext;
+
+import bpmn2.tutorial.model.Item;
+import bpmn2.tutorial.model.ModelFactory;
+import bpmn2.tutorial.model.ModelPackage;
+import bpmn2.tutorial.model.Value;
 
 /**
  * The ImixsBPMNPlugin is the activator class for the BPMN2 extension.
@@ -51,7 +53,8 @@ import org.osgi.framework.BundleContext;
 public class ImixsBPMNPlugin extends AbstractUIPlugin {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "org.eclipse.bpmn2.modeler.examples.customtask"; //$NON-NLS-1$
+	public static final String PLUGIN_ID = "bpmn2.tutorial.runtime"; //
+	//org.eclipse.bpmn2.modeler.examples.customtask"; //$NON-NLS-1$
 	public final static EStructuralFeature IMIXS_ITEM_FEATURE = ModelPackage.eINSTANCE
 			.getDocumentRoot_Item();
 	public final static EStructuralFeature IMIXS_ITEMLIST_FEATURE = ModelPackage.eINSTANCE

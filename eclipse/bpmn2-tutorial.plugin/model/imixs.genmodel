@@ -4,7 +4,7 @@
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>imixs.ecore</foreignModel>
-  <genPackages prefix="Model" basePackage="org.imixs.bpmn" resource="XML" disposableProviderFactory="true"
+  <genPackages prefix="Model" basePackage="bpmn2.tutorial" resource="XML" disposableProviderFactory="true"
       fileExtensions="bpmn" ecorePackage="imixs.ecore#/">
     <genClasses ecoreClass="imixs.ecore#//DocumentRoot">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference imixs.ecore#//DocumentRoot/property"/>

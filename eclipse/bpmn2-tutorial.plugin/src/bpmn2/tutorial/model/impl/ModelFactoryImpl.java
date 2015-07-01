@@ -1,6 +1,8 @@
 /**
  */
-package org.imixs.bpmn.model.impl;
+package bpmn2.tutorial.model.impl;
+
+import bpmn2.tutorial.model.*;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -9,8 +11,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
-import org.imixs.bpmn.model.*;
 
 /**
  * <!-- begin-user-doc -->

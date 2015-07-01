@@ -32,7 +32,7 @@ public class ImixsFeatureContainerTask extends CustomShapeFeatureContainer {
 	// these values must match what's in the plugin.xml
 	public final static String PROCESSENTITY_TASK_ID = "org.imixs.workflow.bpmn.ProcessEntityTask";
 	private static final IColorConstant PROCESSENTITY_BACKGROUND = new ColorConstant(
-			144, 176, 224);
+			144, 76, 24);
   
 	
 	
@@ -107,14 +107,9 @@ public class ImixsFeatureContainerTask extends CustomShapeFeatureContainer {
 	 */
 	@Override
 	public String getId(EObject object) {
-		System.out.println("ImixsFeatureContaierTask - getID ....");
 		if (ImixsBPMNPlugin.isImixsTask(object)) {
-			
-			System.out.println("     - getID : "+PROCESSENTITY_TASK_ID);
-			
 			return PROCESSENTITY_TASK_ID;
 		}
-		System.out.println("    - getID : null");
 		
 		return null;
 	}

@@ -1,6 +1,8 @@
 /**
  */
-package org.imixs.bpmn.model.util;
+package bpmn2.tutorial.model.util;
+
+import bpmn2.tutorial.model.*;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -9,14 +11,12 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.imixs.bpmn.model.*;
-
 /**
  * <!-- begin-user-doc -->
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see org.imixs.bpmn.model.ModelPackage
+ * @see bpmn2.tutorial.model.ModelPackage
  * @generated
  */
 public class ModelAdapterFactory extends AdapterFactoryImpl {
@@ -100,13 +100,13 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.imixs.bpmn.model.DocumentRoot <em>Document Root</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2.tutorial.model.DocumentRoot <em>Document Root</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.imixs.bpmn.model.DocumentRoot
+	 * @see bpmn2.tutorial.model.DocumentRoot
 	 * @generated
 	 */
 	public Adapter createDocumentRootAdapter() {
@@ -114,13 +114,13 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.imixs.bpmn.model.Item <em>Item</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2.tutorial.model.Item <em>Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.imixs.bpmn.model.Item
+	 * @see bpmn2.tutorial.model.Item
 	 * @generated
 	 */
 	public Adapter createItemAdapter() {
@@ -128,13 +128,13 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.imixs.bpmn.model.Value <em>Value</em>}'.
+	 * Creates a new adapter for an object of class '{@link bpmn2.tutorial.model.Value <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.imixs.bpmn.model.Value
+	 * @see bpmn2.tutorial.model.Value
 	 * @generated
 	 */
 	public Adapter createValueAdapter() {

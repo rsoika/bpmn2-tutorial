@@ -6,9 +6,10 @@ import org.eclipse.bpmn2.modeler.core.merrimac.clad.AbstractDetailComposite;
 import org.eclipse.bpmn2.modeler.core.merrimac.dialogs.TextObjectEditor;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.swt.widgets.Composite;
-import org.imixs.bpmn.model.Value;
+
 
 import bpmn2.tutorial.ImixsBPMNPlugin;
+import bpmn2.tutorial.model.Value;
 
 /**
  * This PorpertySection provides the attributes for Mail config.

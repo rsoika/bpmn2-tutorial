@@ -1,6 +1,6 @@
 /**
  */
-package org.imixs.bpmn.model;
+package bpmn2.tutorial.model;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see org.imixs.bpmn.model.ModelPackage
+ * @see bpmn2.tutorial.model.ModelPackage
  * @generated
  */
 public interface ModelFactory extends EFactory {
@@ -19,7 +19,7 @@ public interface ModelFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	ModelFactory eINSTANCE = org.imixs.bpmn.model.impl.ModelFactoryImpl.init();
+	ModelFactory eINSTANCE = bpmn2.tutorial.model.impl.ModelFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Document Root</em>'.

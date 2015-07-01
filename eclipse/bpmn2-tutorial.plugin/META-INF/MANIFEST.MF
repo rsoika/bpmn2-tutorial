@@ -1,15 +1,15 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: bpmn2-tutorial;singleton:=true
+Bundle-SymbolicName: org.imixs.eclipse.bpmn2;singleton:=true
 Bundle-Version: 1.2.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-Activator: bpmn2.tutorial.ImixsBPMNPlugin
 Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.emf.ecore,
- org.eclipse.emf.ecore.xmi,
+ org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.eclipse.graphiti,
  org.eclipse.graphiti.ui,
  org.eclipse.gef,
@@ -31,7 +31,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.junit,
  org.eclipse.swt
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: org.imixs.bpmn.model,
- org.imixs.bpmn.model.impl,
- org.imixs.bpmn.model.util
+Export-Package: bpmn2.tutorial.model,
+ bpmn2.tutorial.model.impl,
+ bpmn2.tutorial.model.util
 Bundle-ActivationPolicy: lazy

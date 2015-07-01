@@ -13,7 +13,7 @@ public class ImixsRuntimeExtension implements IBpmn2RuntimeExtension {
 
 	public static final String RUNTIME_ID = "org.imixs.workflow.bpmn.runtime";
 
-	public static final String targetNamespace = "http://www.imixs.org/bpmn2";
+	public static final String targetNamespace = "http://bpmn2.tutorial.org/bpmn2";
 
 	@Override
 	public String getTargetNamespace(Bpmn2DiagramType diagramType) {
@@ -31,7 +31,7 @@ public class ImixsRuntimeExtension implements IBpmn2RuntimeExtension {
 		InputSource source = new InputSource(
 				FileService.getInputContents(input));
 		RootElementParser parser = new RootElementParser(
-				"http://www.imixs.org/bpmn2");
+				"http://bpmn2.tutorial.org/bpmn2");
 		parser.parse(source);
 		return parser.getResult();
 	}

@@ -1,6 +1,6 @@
 /**
  */
-package org.imixs.bpmn.model;
+package bpmn2.tutorial.model;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -11,13 +11,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * <ul>
- *   <li>{@link org.imixs.bpmn.model.DocumentRoot#getItem <em>Item</em>}</li>
- *   <li>{@link org.imixs.bpmn.model.DocumentRoot#getValue <em>Value</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link bpmn2.tutorial.model.DocumentRoot#getItem <em>Item</em>}</li>
+ *   <li>{@link bpmn2.tutorial.model.DocumentRoot#getValue <em>Value</em>}</li>
+ * </ul>
  *
- * @see org.imixs.bpmn.model.ModelPackage#getDocumentRoot()
+ * @see bpmn2.tutorial.model.ModelPackage#getDocumentRoot()
  * @model extendedMetaData="name='' kind='mixed'"
  * @generated
  */
@@ -32,7 +32,7 @@ public interface DocumentRoot extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Item</em>' containment reference.
 	 * @see #setItem(Item)
-	 * @see org.imixs.bpmn.model.ModelPackage#getDocumentRoot_Item()
+	 * @see bpmn2.tutorial.model.ModelPackage#getDocumentRoot_Item()
 	 * @model containment="true" upper="-2"
 	 *        extendedMetaData="name='item' kind='element' namespace='##targetNamespace'"
 	 * @generated
@@ -40,7 +40,7 @@ public interface DocumentRoot extends EObject {
 	Item getItem();
 
 	/**
-	 * Sets the value of the '{@link org.imixs.bpmn.model.DocumentRoot#getItem <em>Item</em>}' containment reference.
+	 * Sets the value of the '{@link bpmn2.tutorial.model.DocumentRoot#getItem <em>Item</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Item</em>' containment reference.
@@ -59,7 +59,7 @@ public interface DocumentRoot extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' containment reference.
 	 * @see #setValue(Value)
-	 * @see org.imixs.bpmn.model.ModelPackage#getDocumentRoot_Value()
+	 * @see bpmn2.tutorial.model.ModelPackage#getDocumentRoot_Value()
 	 * @model containment="true" upper="-2"
 	 *        extendedMetaData="name='value' kind='element' namespace='##targetNamespace'"
 	 * @generated
@@ -67,7 +67,7 @@ public interface DocumentRoot extends EObject {
 	Value getValue();
 
 	/**
-	 * Sets the value of the '{@link org.imixs.bpmn.model.DocumentRoot#getValue <em>Value</em>}' containment reference.
+	 * Sets the value of the '{@link bpmn2.tutorial.model.DocumentRoot#getValue <em>Value</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Value</em>' containment reference.

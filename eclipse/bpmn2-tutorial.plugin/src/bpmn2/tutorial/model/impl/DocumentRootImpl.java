@@ -1,17 +1,20 @@
 /**
  */
-package org.imixs.bpmn.model.impl;
+package bpmn2.tutorial.model.impl;
+
+import bpmn2.tutorial.model.DocumentRoot;
+import bpmn2.tutorial.model.Item;
+import bpmn2.tutorial.model.ModelPackage;
+import bpmn2.tutorial.model.Value;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-import org.imixs.bpmn.model.DocumentRoot;
-import org.imixs.bpmn.model.Item;
-import org.imixs.bpmn.model.ModelPackage;
-import org.imixs.bpmn.model.Value;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,11 +22,11 @@ import org.imixs.bpmn.model.Value;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- *   <li>{@link org.imixs.bpmn.model.impl.DocumentRootImpl#getItem <em>Item</em>}</li>
- *   <li>{@link org.imixs.bpmn.model.impl.DocumentRootImpl#getValue <em>Value</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link bpmn2.tutorial.model.impl.DocumentRootImpl#getItem <em>Item</em>}</li>
+ *   <li>{@link bpmn2.tutorial.model.impl.DocumentRootImpl#getValue <em>Value</em>}</li>
+ * </ul>
  *
  * @generated
  */
@@ -37,6 +40,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @ordered
 	 */
 	protected Item item;
+
 	/**
 	 * The cached value of the '{@link #getValue() <em>Value</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -46,6 +50,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @ordered
 	 */
 	protected Value value;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

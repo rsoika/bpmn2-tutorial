@@ -1,13 +1,13 @@
 /**
  */
-package org.imixs.bpmn.model.util;
+package bpmn2.tutorial.model.util;
+
+import bpmn2.tutorial.model.*;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
-
-import org.imixs.bpmn.model.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,7 +19,7 @@ import org.imixs.bpmn.model.*;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see org.imixs.bpmn.model.ModelPackage
+ * @see bpmn2.tutorial.model.ModelPackage
  * @generated
  */
 public class ModelSwitch<T> extends Switch<T> {
@@ -47,7 +47,7 @@ public class ModelSwitch<T> extends Switch<T> {
 	 * Checks whether this is a switch for the given package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @parameter ePackage the package in question.
+	 * @param ePackage the package in question.
 	 * @return whether this is a switch for the given package.
 	 * @generated
 	 */

@@ -1,6 +1,10 @@
 /**
  */
-package org.imixs.bpmn.model.impl;
+package bpmn2.tutorial.model.impl;
+
+import bpmn2.tutorial.model.Item;
+import bpmn2.tutorial.model.ModelPackage;
+import bpmn2.tutorial.model.Value;
 
 import java.util.Collection;
 
@@ -18,22 +22,18 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import org.imixs.bpmn.model.Item;
-import org.imixs.bpmn.model.ModelPackage;
-import org.imixs.bpmn.model.Value;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Item</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- *   <li>{@link org.imixs.bpmn.model.impl.ItemImpl#getValuelist <em>Valuelist</em>}</li>
- *   <li>{@link org.imixs.bpmn.model.impl.ItemImpl#getName <em>Name</em>}</li>
- *   <li>{@link org.imixs.bpmn.model.impl.ItemImpl#getType <em>Type</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link bpmn2.tutorial.model.impl.ItemImpl#getValuelist <em>Valuelist</em>}</li>
+ *   <li>{@link bpmn2.tutorial.model.impl.ItemImpl#getName <em>Name</em>}</li>
+ *   <li>{@link bpmn2.tutorial.model.impl.ItemImpl#getType <em>Type</em>}</li>
+ * </ul>
  *
  * @generated
  */
