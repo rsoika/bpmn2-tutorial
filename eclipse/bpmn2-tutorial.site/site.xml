@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site
+      mirrorsURL="http://www.imixs.org/org.imixs.eclipse.bpmn2.updatesite/site.xml">
+   <description name="BPMN2 Tutorial">
+      This is a example project explaining how to extend the Eclipse BPMN2 Runtime.
+   </description>
+   <category-def name="bpmn2-tutorial" label="BPMN2 Tutorial"/>
+</site>

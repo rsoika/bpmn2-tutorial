@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension
+         point="org.eclipse.bpmn2.modeler.runtime">
+      <runtime
+            class="bpmn2.tutorial.ImixsRuntimeExtension"
+            description="Imixs-Workflow BPMN Runtime Extension"
+            id="bpmn2.tutorial.runtime"
+            name="BPMN-Tutorial">
+      </runtime>
+      <model
+            resourceFactory="bpmn2.tutorial.model.util.ModelResourceFactoryImpl"
+            runtimeId="org.imixs.workflow.bpmn.runtime"
+            uri="http://www.imixs.org/bpmn2">
+      </model>
+     
+    
+      <customTask
+            category="Tutorial"
+            description="A Workflow Task describes the process performed by a human user. The task is managed by the Imixs-Workflow Engine and provides properties which are describing the status of this task inside the Workflow Engine."
+            featureContainer="bpmn2.tutorial.ImixsFeatureContainerTask"
+            icon="process-bubble.png"
+            id="org.imixs.workflow.bpmn.ProcessEntityTask"
+            name="Example-Task"
+            propertyTabs="bpmn2.tutorial.propertytab.task.workflow bpmn2.tutorial.propertytab.task.application"
+            runtimeId="bpmn2.tutorial.runtime"
+            type="Task">
+         <property
+               description="Example Process ID"
+               label="ID"
+               name="processid"
+               type="EInt"
+               value="0">
+         </property>
+      </customTask>
+     
+     
+      
+    
+
+      
+      <!-- Process Tabs -->
+      <propertyTab
+         class="bpmn2.tutorial.ui.task.ProcessWorkflowPropertySection"
+         id="bpmn2.tutorial.propertytab.task.workflow"
+         label="Workflow"
+         replaceTab="org.eclipse.bpmn2.modeler.task.tab"
+         runtimeId="bpmn2.tutorial.runtime"
+         type="org.eclipse.bpmn2.Task">
+      </propertyTab>
+      
+   
+   		<modelEnablement
+      		    runtimeId="bpmn2.tutorial.runtime"
+				id="org.imixs.workflow.bpmn.profile.Full"
+				profile="Full"
+				description="All BPMN2 elements and attributes">
+			<enable object="all"/>
+		</modelEnablement>
+		
+	
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated imixs -->
+      <package
+            uri="http://www.imixs.org/bpmn2"
+            class="bpmn2.tutorial.model.ModelPackage"
+            genModel="model/imixs.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated imixs -->
+      <parser
+            type="bpmn"
+            class="bpmn2.tutorial.model.util.ModelResourceFactoryImpl"/>
+   </extension>
+</plugin>
