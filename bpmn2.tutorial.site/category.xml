@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description url="http://eclipse.org/bpmn2-modeler">
+      BPMN2 Tutorial
+   </description>
+   <category-def name="bpmn2.tutorial" label="Imixs-BPMN Modeler">
+      <description>
+         BPMN2 Tutorial 
+      </description>
+   </category-def>
+   
+   <category-def name="bpmn2.tutorial.source" label="BPMN2 Tutorial Sources">
+      <description>
+         BPMN2 Tutorial Sources
+      </description>
+   </category-def>
+
+   <feature url="features/bpmn2.tutorial.feature_0.0.0.jar" id="bpmn2.tutorial.feature" version="0.0.0">
+      <category name="bpmn2.tutorial"/>
+   </feature>
+   
+   <feature url="features/bpmn2.tutorial.source.feature_0.0.0.jar" id="bpmn2.tutorial.feature" version="0.0.0">
+      <category name="bpmn2.tutorial.source"/>
+   </feature>
+</site>

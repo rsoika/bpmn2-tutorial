@@ -20,7 +20,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>org.imixs.eclipse.bpmn2.plugin</artifactId>
+	<artifactId>bpmn2.tutorial.plugin</artifactId>
 	<packaging>eclipse-plugin</packaging>
 	<name>BPMN2 Tutorial</name>
 <!-- 
