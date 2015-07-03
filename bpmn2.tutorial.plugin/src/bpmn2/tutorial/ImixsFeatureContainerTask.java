@@ -37,13 +37,11 @@ public class ImixsFeatureContainerTask extends CustomShapeFeatureContainer {
 	
 	
 	public ImixsFeatureContainerTask() {
-		System.out.println("DEBUG ImixsCreateCustomTaskFeature- constructor...");
 	}
 	
 	
 	@Override
 	public boolean canApplyTo(Object o) {
-		System.out.println("DEBUG ImixsCreateCustomTaskFeature- canApplyTo...");
 		boolean b1 =  o instanceof Task;
 		boolean b2 = o.getClass().isAssignableFrom(Task.class);
 		return b1 || b2;
@@ -52,7 +50,6 @@ public class ImixsFeatureContainerTask extends CustomShapeFeatureContainer {
 	
 	@Override
 	protected IShapeFeatureContainer createFeatureContainer(IFeatureProvider fp) {
-		System.out.println("DEBUG ImixsCreateCustomTaskFeature->createFeatureContainer");
 		return new TaskFeatureContainer() {
 			@Override
 			public ICreateFeature getCreateFeature(IFeatureProvider fp) {
@@ -71,8 +68,6 @@ public class ImixsFeatureContainerTask extends CustomShapeFeatureContainer {
 
 		public ImixsCreateCustomTaskFeature(IFeatureProvider fp) {
 			super(fp);
-			System.out.println("DEBUG ImixsCreateCustomTaskFeature");
-		
 		}
 
 		
@@ -83,12 +78,10 @@ public class ImixsFeatureContainerTask extends CustomShapeFeatureContainer {
 
 		public ImixsmAddCustomTaskFeature(IFeatureProvider fp) {
 			super(fp);
-			System.out.println("DEBUG ImixsmAddCustomTaskFeature");
 		}
 		
 		@Override
 		protected void decorateShape(IAddContext context, ContainerShape containerShape, Task businessObject) {
-			System.out.println("DEBUG ImixsmAddCustomTaskFeature decorateShape");
 			
 			super.decorateShape(context, containerShape, businessObject);
 			setFillColor(containerShape);

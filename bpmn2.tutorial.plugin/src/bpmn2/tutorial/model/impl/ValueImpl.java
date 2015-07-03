@@ -2,6 +2,7 @@
  */
 package bpmn2.tutorial.model.impl;
 
+import bpmn2.tutorial.model.Item;
 import bpmn2.tutorial.model.ModelPackage;
 import bpmn2.tutorial.model.Value;
 
@@ -14,7 +15,9 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.FeatureMap;
+import org.eclipse.emf.ecore.util.FeatureMapUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -83,26 +86,62 @@ public class ValueImpl extends MinimalEObjectImpl.Container implements Value {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated NOT
 	 */
 	public String getValue() {
-		// TODO: implement this method to return the 'Value' attribute
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		if (mixed != null) {
+			StringBuilder result = new StringBuilder();
+			for (FeatureMap.Entry cur : mixed) {
+				switch (cur.getEStructuralFeature().getFeatureID()) {
+				case XMLTypePackage.XML_TYPE_DOCUMENT_ROOT__CDATA:
+				case XMLTypePackage.XML_TYPE_DOCUMENT_ROOT__TEXT:
+					result.append(cur.getValue());
+					break;
+
+				default:
+					break;
+				}
+			}
+			return result.toString();
+		}
+
+		return null;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * The content of a Value EObject will be wrapped into a CDATA element,
+	 * except the type of the containing Item is set to 'xs:boolean'.
+	 * 
+	 * A null value is not allowed and will be transformed into an empty string
+	 * 
+	 * @generated NOT
 	 */
 	public void setValue(String newValue) {
-		// TODO: implement this method to set the 'Value' attribute
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		
+		// do not allow null values!
+		if (newValue==null) {
+			newValue="";
+		}
+		
+		getMixed().clear();
+
+		FeatureMap.Entry cdata = null;
+
+		// try to get the container Item EObject to determine the type
+		Item item = (Item) this.eContainer;
+		if (item != null && "xs:boolean".equals(item.getType())) {
+			cdata = FeatureMapUtil.createTextEntry(newValue);
+		} else {
+			// default will wrap the value into a CDATA entry
+			cdata = FeatureMapUtil.createCDATAEntry(newValue);
+		}
+		getMixed().add(cdata);
 	}
+
 
 	/**
 	 * <!-- begin-user-doc -->
