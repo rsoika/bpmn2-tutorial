@@ -34,10 +34,11 @@
 	</licenses>
 
 
+	<!-- default to Eclipse oxygen release -->
 	<properties>
-		<eclipse-site>http://download.eclipse.org/releases/mars</eclipse-site>
-		<platform-version>[4.4,5.0]</platform-version>
-		<platform-version-name>mars</platform-version-name>
+		<eclipse-site>http://download.eclipse.org/releases/oxygen</eclipse-site>
+		<platform-version>[4.7,5.0)</platform-version>
+		<platform-version-name>oxygen</platform-version-name>
 		<tycho-version>0.21.0</tycho-version>
 		<tycho-extras-version>${tycho-version}</tycho-extras-version>
 	</properties>
@@ -67,8 +68,23 @@
 			</activation>
 			<properties>
 				<eclipse-site>http://download.eclipse.org/releases/mars</eclipse-site>
-				<platform-version>[4.4,5.0]</platform-version>
+				<platform-version>[4.5,5.0]</platform-version>
 				<platform-version-name>mars</platform-version-name>
+			</properties>
+		</profile>
+		
+		<profile>
+			<id>platform-neon</id>
+			<activation>
+				<property>
+					<name>platform-version-name</name>
+					<value>neon</value>
+				</property>
+			</activation>
+			<properties>
+				<eclipse-site>http://download.eclipse.org/releases/neon</eclipse-site>
+				<platform-version>[4.6,5.0]</platform-version>
+				<platform-version-name>neon</platform-version-name>
 			</properties>
 		</profile>
 	</profiles>
